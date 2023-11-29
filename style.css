@@ -5,7 +5,7 @@
     --dark:#202631;
     --border-color:rgba(0,0,0,.10);
     --border-width:1px;
-    --border-radius:50px;
+    --border-radius:30px;
 }
 body{
     font-family: 'Barlow',sans-serif;
@@ -14,6 +14,7 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 800;
+    color: var(--dark);
 }
 a{
     color:var(--body);
@@ -90,4 +91,53 @@ section{
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+}
+.intro{
+    margin-bottom: 60px;
+}
+.intro .hr-line{
+    width: 60px;
+    height: 4px;
+    background-color: var(--dark);
+}
+.intro h1{
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 16px ;
+    margin-bottom: 16px;
+}
+.intro p{
+    max-width: 500px;
+}
+.service{
+    padding: 32px;
+    display: flex;
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border-color);
+    margin-bottom: 24px;
+}
+.service .icon{
+    width: 100px;
+    height: 100px;
+    background-color: var(--dark);
+    display: flex ;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    color: white;
+    border-radius: var(--border-radius);
+    margin-right: 16px;
+}
+.link-arrow{
+    text-transform: uppercase;
+    display: flex;
+
+}
+.link-arrow i{
+    transition: all 0.4s ease;
+}
+.link-arrow:hover i{
+    transform: translate(5px,-5px);
+
 }
