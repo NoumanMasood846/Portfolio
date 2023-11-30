@@ -171,7 +171,6 @@ section{
 .project .image-wrapper{
     overflow: hidden;
     border-radius: var(--border-radius);
-    
 }
 .project .image-wrapper img{
     border-radius: var(--border-radius);
