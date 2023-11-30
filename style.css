@@ -95,6 +95,7 @@ section{
 .intro{
     margin-bottom: 60px;
 }
+
 .intro .hr-line{
     width: 60px;
     height: 4px;
@@ -108,6 +109,15 @@ section{
 }
 .intro p{
     max-width: 500px;
+}
+
+.intro .intro-dark h1,
+.intro.intro-dark p{
+    color: var(--white);
+
+}
+.intro.intro-dark .hr-line{
+    background-color: var(--white);
 }
 .service{
     padding: 32px;
@@ -134,10 +144,40 @@ section{
     display: flex;
 
 }
+.link-arrow.link-arrow-dark{
+    color: var(--body);
+}
+.link-arrow.link-arrow-dark:hover{
+    color: var(--white);
+}
+
 .link-arrow i{
     transition: all 0.4s ease;
 }
 .link-arrow:hover i{
     transform: translate(5px,-5px);
 
+}
+#work {
+    background-color: var(--dark);
+}
+#work h1{
+    color: var(--white);
+}
+.project h3{
+    color: var(--white);
+    margin-top: 24px;
+}
+.project .image-wrapper{
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    
+}
+.project .image-wrapper img{
+    border-radius: var(--border-radius);
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+.project:hover .image-wrapper img{
+    transform: scale(1);
 }
